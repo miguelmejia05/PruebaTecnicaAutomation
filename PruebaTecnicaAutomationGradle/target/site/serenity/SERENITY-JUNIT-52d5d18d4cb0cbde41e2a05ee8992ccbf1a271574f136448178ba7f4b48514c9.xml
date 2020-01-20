@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Product purchase process" skipped="0" tests="1" time="0.77" timestamp="2020-01-19 08:32:42"><testcase name="User adds product to shopping cart"><error message="Arity mismatch: Step Definition 'pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct() in file:/C:/Users/miguel.mejia.SOPHOS/git/PruebaTecnicaAutomation/PruebaTecnicaAutomationGradle/bin/test/' with pattern [^User searchs a product$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Table:[[product], [Cama Divan 2 plazas]]]. &#10;Step text: User searchs a product" type="cucumber.runtime.CucumberException">Arity mismatch: Step Definition 'pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct() in file:/C:/Users/miguel.mejia.SOPHOS/git/PruebaTecnicaAutomation/PruebaTecnicaAutomationGradle/bin/test/' with pattern [^User searchs a product$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Table:[[product], [Cama Divan 2 plazas]]]. 
+Step text: User searchs a product</error><system-err>Arity mismatch: Step Definition 'pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct() in file:/C:/Users/miguel.mejia.SOPHOS/git/PruebaTecnicaAutomation/PruebaTecnicaAutomationGradle/bin/test/' with pattern [^User searchs a product$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Table:[[product], [Cama Divan 2 plazas]]]. 
+Step text: User searchs a product&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+</system-err></testcase></testsuite>
