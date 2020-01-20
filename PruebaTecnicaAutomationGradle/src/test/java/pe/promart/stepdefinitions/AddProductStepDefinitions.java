@@ -1,6 +1,10 @@
 package pe.promart.stepdefinitions;
 import org.openqa.selenium.WebDriver;
 import static pe.promart.tasks.OpenBrowserTask.intoURL;
+
+import java.util.List;
+
+import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -8,11 +12,11 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
+import pe.promart.tasks.SearchProductTask;
 
 
 
 public class AddProductStepDefinitions {
-	private static final String OpenBrowserTask = null;
 
 	@Managed(driver="chrome")
 	private WebDriver hisBrowser;
@@ -20,7 +24,7 @@ public class AddProductStepDefinitions {
 	private Actor miguelUser = Actor.named("miguelUser");
 	
 	@Given("^User searchs a product$")
-	public void userSearchsAProduct() {
+	public void userSearchsAProduct(DataTable args1) {
 	    // Write code here that turns the phrase above into concrete actions
 	    // For automatic transformation, change DataTable to one of
 	    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
@@ -28,7 +32,11 @@ public class AddProductStepDefinitions {
 	    // Field names for YourType must match the column names in 
 	    // your feature file (except for spaces and capitalization).
 		
-		intoURL(hisBrowser);
+		miguelUser.attemptsTo(intoURL(hisBrowser));
+		List<List<String>> data = args1.raw();
+		for (int i=1; i<= data.size(); i++) {
+			miguelUser.attemptsTo(SearchProductTask.setProduct(hisBrowser, data.get(1).get(0).trim()));
+		}
 
 	}
 
