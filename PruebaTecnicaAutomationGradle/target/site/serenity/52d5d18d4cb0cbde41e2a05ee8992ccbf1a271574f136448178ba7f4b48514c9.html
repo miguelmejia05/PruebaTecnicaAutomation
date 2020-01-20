@@ -148,7 +148,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-01-2020 20:32</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-01-2020 22:13</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -178,9 +178,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-chain-broken compromised-icon fa-2x' title='COMPROMISED'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">
+                                <span class="compromised-color">
                                     User adds product to shopping cart
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -253,6 +253,7 @@
                         Steps
                     </th>
 
+                        <th width="150" class="greentext">Screenshots</th>
                     <th width="130" class="greentext">Outcome</th>
                     <th width="100" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
                 </tr>
@@ -260,38 +261,52 @@
                     <td colspan="5"></td>
                 </tr>
 
-                    <tr class="test-ERROR">
+                    <tr class="test-COMPROMISED">
 
                         <td width="50" class="step-icon">
                             <a name="0"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
-                                </span>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0 compromised-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
+                                    <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                                       style="display:block;">
                                         <span class="top-level-step">
                                                 Given User searchs a product<br><table class='embedded'><tbody><tr><td>product</td></tr><tr><td>Cama Divan 2 plazas</td></tr></tbody></table>
                                         </span>
+                                    </a>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">ERROR</span></td>
-                        <td width="100"><span class="top-level-step">0.37s</span></td>
+                            <td width="160" class="COMPROMISED-text">
+
+                                    <a href="52d5d18d4cb0cbde41e2a05ee8992ccbf1a271574f136448178ba7f4b48514c9_screenshots.html#screenshots?screenshot=4">
+                                        <img src="58c59ffdd9553fd303ecce53a466a42a0cf3b89b588ba9d226c7a1602b843163.png"
+                                             href="58c59ffdd9553fd303ecce53a466a42a0cf3b89b588ba9d226c7a1602b843163.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="130"><span class="top-level-step">COMPROMISED</span></td>
+                        <td width="100"><span class="top-level-step">23.29s</span></td>
                     </tr>
-                        <tr class="test-ERROR">
+                        <tr class="test-COMPROMISED">
                             <td width="40">&nbsp</td>
-                                    <td width="%" colspan="3" class="error-message-cell">
+                                    <td width="%" colspan="4" class="error-message-cell">
 
 
     <div style="display:block">
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">cucumber.runtime.CucumberException: Arity mismatch: Step Definition &#39;pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct() in file:/C:/Users/miguel.mejia.SOPHOS/git/PruebaTecnicaAutomation/PruebaTecnicaAutomationGradle/bin/test/&#39; with pattern [^User searchs a product$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Table:[[product], [Cama Divan 2 plazas]]]. <br>Step text: User searchs a product</span>
+                    <span class="error-message error-message-title">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-1""
@@ -307,17 +322,373 @@
         <div class="collapse multi-collapse" id="stacktraceModal-1">
             <div class="card">
                 <div class="card-header">
-                    <h4>cucumber.runtime.CucumberException </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>cucumber.runner.Runner.runPickle(Runner.java:80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)<br /></pre>
+                        <pre>pe.promart.tasks.SearchProductTask.performAs(SearchProductTask.java:24)<br />pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct(AddProductStepDefinitions.java:38)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)<br /></pre>
                     </div>
 
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: /html/body/header/div/div[1]/div/div/div/div[2]/div/div/div[1]/div/div/div/div/div[1]/a[1]/div/h3 to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>pe.promart.tasks.SearchProductTask.performAs(SearchProductTask.java :24)<br />pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct(AddProductStepDefinitions.java :38)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :86)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :38)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :538)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :760)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :460)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :206)<br /></pre>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-0 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                                       style="display:block;">
+                                        <span class="nested-step">
+                                                Migueluser open browser task
+                                        </span>
+                                    </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                            <td width="160" class="SUCCESS-text">
+
+                            </td>
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">13.58s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-0-0"></a>
+                                <span style="margin-left: 60px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                        <span class="nested-group-step">
+                                                miguelUser opens the Index page
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                            <td width="160" class="SUCCESS-text">
+
+                            </td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">13.54s</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-1"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-1 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
+                                       style="display:block;">
+                                        <span class="nested-step">
+                                                Migueluser search product task
+                                        </span>
+                                    </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                            <td width="160" class="SUCCESS-text">
+
+                            </td>
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">2.37s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-1" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-1-0"></a>
+                                <span style="margin-left: 60px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                        <span class="nested-group-step">
+                                                miguelUser enters 'Cama Divan 2 plazas' into TXT_SEARCH
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                            <td width="160" class="SUCCESS-text">
+
+                            </td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.67s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-1-1"></a>
+                                <span style="margin-left: 60px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                        <span class="nested-group-step">
+                                                miguelUser clicks on LBL_PRODUCT
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                            <td width="160" class="SUCCESS-text">
+
+                            </td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">1.63s</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-COMPROMISED">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-2"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-2 compromised-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
+                                       style="display:block;">
+                                        <span class="nested-step">
+                                                Migueluser search product task
+                                        </span>
+                                    </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                            <td width="160" class="COMPROMISED-text">
+
+                                    <a href="52d5d18d4cb0cbde41e2a05ee8992ccbf1a271574f136448178ba7f4b48514c9_screenshots.html#screenshots?screenshot=2">
+                                        <img src="58c59ffdd9553fd303ecce53a466a42a0cf3b89b588ba9d226c7a1602b843163.png"
+                                             href="58c59ffdd9553fd303ecce53a466a42a0cf3b89b588ba9d226c7a1602b843163.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="130"><span class="nested-step">COMPROMISED</span></td>
+                        <td width="100"><span class="nested-step">6.69s</span></td>
+                    </tr>
+                        <tr class="test-COMPROMISED">
+                            <td width="40">&nbsp</td>
+                                    <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-7""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-7">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>pe.promart.tasks.SearchProductTask.performAs(SearchProductTask.java:24)<br />pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct(AddProductStepDefinitions.java:38)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: /html/body/header/div/div[1]/div/div/div/div[2]/div/div/div[1]/div/div/div/div/div[1]/a[1]/div/h3 to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>pe.promart.tasks.SearchProductTask.performAs(SearchProductTask.java :24)<br />pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct(AddProductStepDefinitions.java :38)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :86)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :38)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :538)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :760)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :460)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :206)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-2" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-2-0"></a>
+                                <span style="margin-left: 60px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                        <span class="nested-group-step">
+                                                miguelUser enters 'Cama Divan 2 plazas' into TXT_SEARCH
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                            <td width="160" class="SUCCESS-text">
+
+                            </td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">1.02s</span></td>
+                    </tr>
+                    <tr class="test-COMPROMISED">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-2-1"></a>
+                                <span style="margin-left: 60px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-chain-broken compromised-icon ' title='COMPROMISED'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                        <span class="nested-group-step">
+                                                miguelUser clicks on LBL_PRODUCT
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                            <td width="160" class="COMPROMISED-text">
+
+                                    <a href="52d5d18d4cb0cbde41e2a05ee8992ccbf1a271574f136448178ba7f4b48514c9_screenshots.html#screenshots?screenshot=2">
+                                        <img src="58c59ffdd9553fd303ecce53a466a42a0cf3b89b588ba9d226c7a1602b843163.png"
+                                             href="58c59ffdd9553fd303ecce53a466a42a0cf3b89b588ba9d226c7a1602b843163.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="130"><span class="nested-group-step">COMPROMISED</span></td>
+                        <td width="100"><span class="nested-group-step">5.64s</span></td>
+                    </tr>
+                        <tr class="test-COMPROMISED">
+                            <td width="40">&nbsp</td>
+                                    <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-9""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-9">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>pe.promart.tasks.SearchProductTask.performAs(SearchProductTask.java:24)<br />pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct(AddProductStepDefinitions.java:38)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: /html/body/header/div/div[1]/div/div/div/div[2]/div/div/div[1]/div/div/div/div/div[1]/a[1]/div/h3 to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>pe.promart.tasks.SearchProductTask.performAs(SearchProductTask.java :24)<br />pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct(AddProductStepDefinitions.java :38)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :86)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :38)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :538)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :760)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :460)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :206)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                                </table>
                             </td>
                         </tr>
                     <tr class="test-SKIPPED">
@@ -339,6 +710,9 @@
                             </div>
                         </td>
 
+                            <td width="160" class="SKIPPED-text">
+
+                            </td>
                         <td width="130"><span class="top-level-step">SKIPPED</span></td>
                         <td width="100"><span class="top-level-step">0.01s</span></td>
                     </tr>
@@ -361,13 +735,16 @@
                             </div>
                         </td>
 
+                            <td width="160" class="SKIPPED-text">
+
+                            </td>
                         <td width="130"><span class="top-level-step">SKIPPED</span></td>
                         <td width="100"><span class="top-level-step">0s</span></td>
                     </tr>
-                <tr class="test-ERROR">
-                        <td colspan="2"></td>
-                    <td width="130"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.77s</em></span></td>
+                <tr class="test-COMPROMISED">
+                        <td colspan="3"></td>
+                    <td width="130"><span class="top-level-step"><em>COMPROMISED</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>23.65s</em></span></td>
                 </tr>
 
             </table>
