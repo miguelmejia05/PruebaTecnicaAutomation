@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-01-2020 22:13</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-01-2020 09:10</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-chain-broken compromised-icon fa-2x' title='COMPROMISED'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="compromised-color">User adds product to shopping cart
+                                <span class="error-color">User adds product to shopping cart
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -208,13 +208,50 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Index out of bounds exception: Index: 2, Size: 2</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.IndexOutOfBoundsException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct(AddProductStepDefinitions.java:38)<br />✽.User searchs a product(src/test/resources/features/add_product.feature:5)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource3198428842632767658.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="58c59ffdd9553fd303ecce53a466a42a0cf3b89b588ba9d226c7a1602b843163.png" title=" Given User searchs a product
+                <img src="5f19460b909d5dc243489724412d1155b68a4196ba8b50349f32c58419e36385.png" title=" Given User searchs a product
 | product |
-| Cama Divan 2 plazas |" width="1034"/>
-                <img src="58c59ffdd9553fd303ecce53a466a42a0cf3b89b588ba9d226c7a1602b843163.png" title=" Migueluser search product task" width="1034"/>
-                <img src="58c59ffdd9553fd303ecce53a466a42a0cf3b89b588ba9d226c7a1602b843163.png" title=" miguelUser clicks on LBL_PRODUCT: <span class='compromised-color'>COMPROMISED</span>" width="1034"/>
+| Cama Divan 2 plazas |: <span class='error-color'>ERROR</span>" width="1034"/>
             </div>
         </div>
 

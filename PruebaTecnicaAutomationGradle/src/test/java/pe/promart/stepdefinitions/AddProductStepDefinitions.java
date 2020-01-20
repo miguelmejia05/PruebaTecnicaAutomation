@@ -35,7 +35,7 @@ public class AddProductStepDefinitions {
 		miguelUser.attemptsTo(intoURL(hisBrowser));
 		List<List<String>> data = args1.raw();
 		for (int i=1; i<= data.size(); i++) {
-			miguelUser.attemptsTo(SearchProductTask.setProduct(hisBrowser, data.get(1).get(0).trim()));
+			miguelUser.attemptsTo(SearchProductTask.setProduct(hisBrowser, data.get(i).get(0).trim()));
 		}
 
 	}

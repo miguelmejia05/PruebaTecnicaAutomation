@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Product purchase process" skipped="1" tests="1" time="23.65" timestamp="2020-01-19 10:13:24"><testcase name="User adds product to shopping cart"><compromised message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</compromised><system-err>Expected enabled element was not enabled&#13;
-pe.promart.tasks.SearchProductTask.performAs(SearchProductTask.java:24)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Product purchase process" skipped="0" tests="1" time="55.47" timestamp="2020-01-20 09:10:40"><testcase name="User adds product to shopping cart"><error message="Index: 2, Size: 2" type="java.lang.IndexOutOfBoundsException">Index: 2, Size: 2</error><system-err>Index: 2, Size: 2&#13;
 pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct(AddProductStepDefinitions.java:38)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
-org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+✽.User searchs a product(src/test/resources/features/add_product.feature:5)&#13;
 </system-err></testcase></testsuite>
