@@ -12,6 +12,8 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
+import pe.promart.tasks.AddProductTask;
+import pe.promart.tasks.CheckCartTask;
 import pe.promart.tasks.SearchProductTask;
 
 
@@ -24,33 +26,23 @@ public class AddProductStepDefinitions {
 	private Actor miguelUser = Actor.named("miguelUser");
 	
 	@Given("^User searchs a product$")
-	public void userSearchsAProduct(DataTable args1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    // For automatic transformation, change DataTable to one of
-	    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
-	    // E,K,V must be a scalar (String, Integer, Date, enum etc).
-	    // Field names for YourType must match the column names in 
-	    // your feature file (except for spaces and capitalization).
-		
+	public void userSearchsAProduct() {
 		miguelUser.attemptsTo(intoURL(hisBrowser));
-		List<List<String>> data = args1.raw();
-		for (int i=1; i<= data.size(); i++) {
-			miguelUser.attemptsTo(SearchProductTask.setProduct(hisBrowser, data.get(i).get(0).trim()));
-		}
-
 	}
 
 
 	@When("^User picks up a product$")
-	public void userPicksUpAProduct() {
-	    // Write code here that turns the phrase above into concrete actions
-		
+	public void userPicksUpAProduct(DataTable args1) {
+		List<List<String>> data = args1.raw();
+		for (int i=1; i< data.size(); i++) {
+			miguelUser.attemptsTo(SearchProductTask.setProduct(hisBrowser, data.get(i).get(0).trim()));
+			miguelUser.attemptsTo(AddProductTask.checkProduct(hisBrowser));
+		}
 	}
 
 	@Then("^User adds product to shopping cart$")
 	public void userAddsProductToShoppingCart() {
-	    // Write code here that turns the phrase above into concrete actions
-
+		miguelUser.attemptsTo(CheckCartTask.checkCart(hisBrowser));
 	}
 	
 

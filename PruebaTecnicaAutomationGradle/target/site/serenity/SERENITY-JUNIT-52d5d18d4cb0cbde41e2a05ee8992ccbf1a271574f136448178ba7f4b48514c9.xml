@@ -1,4 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Product purchase process" skipped="0" tests="1" time="55.47" timestamp="2020-01-20 09:10:40"><testcase name="User adds product to shopping cart"><error message="Index: 2, Size: 2" type="java.lang.IndexOutOfBoundsException">Index: 2, Size: 2</error><system-err>Index: 2, Size: 2&#13;
-pe.promart.stepdefinitions.AddProductStepDefinitions.userSearchsAProduct(AddProductStepDefinitions.java:38)&#13;
-✽.User searchs a product(src/test/resources/features/add_product.feature:5)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Product purchase process" skipped="0" tests="1" time="36.13" timestamp="2020-01-20 11:34:04"><testcase name="User adds product to shopping cart"/></testsuite>

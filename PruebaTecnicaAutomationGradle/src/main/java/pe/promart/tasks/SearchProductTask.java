@@ -11,14 +11,15 @@ import static pe.promart.userinterfaces.IndexPage.LBL_PRODUCT;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class SearchProductTask implements Task{
+	private WebDriver hisBrowser;
+	private String strProduct;
+	
 	public SearchProductTask(WebDriver hisBrowser, String strProduct) {
 		super();
 		this.hisBrowser = hisBrowser;
 		this.strProduct = strProduct;
 	}
 
-	private WebDriver hisBrowser;
-	private String strProduct;
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 		// TODO Auto-generated method stub
